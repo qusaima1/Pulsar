@@ -1,0 +1,13 @@
+idf_component_register(
+    SRCS
+        "src/wifi_telemetry.cpp"
+        "src/ml_rx.cpp"
+    INCLUDE_DIRS
+        "include"
+    REQUIRES
+        nvs_flash
+        esp_wifi
+        esp_netif
+        lwip
+        heart_monitor
+)

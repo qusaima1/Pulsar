@@ -1,0 +1,12 @@
+idf_component_register(
+    SRCS
+        "src/heart_monitor_tasks.cpp"
+        "src/pulse_bpm.cpp"
+    INCLUDE_DIRS
+        "include"
+    REQUIRES
+        driver
+        freertos
+        esp_timer
+        display
+)

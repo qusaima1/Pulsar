@@ -1,0 +1,9 @@
+idf_component_register(
+    SRCS
+        "src/lcd2004_liquidcrystal_i2c.cpp"
+    INCLUDE_DIRS
+        "include"
+    REQUIRES
+        driver
+        freertos
+)
